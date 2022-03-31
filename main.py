@@ -78,10 +78,10 @@ canvas.grid(row=0, column=0, columnspan=2)
 
 # Buttons
 wrong = PhotoImage(file="images/wrong.png")
-wrong_button = Button(image=wrong, highlightthickness=0, command=next_card)
+wrong_button = Button(image=wrong, highlightthickness=0, bd=0, command=next_card)
 wrong_button.grid(row=1, column=0)
 right = PhotoImage(file="images/right.png")
-right_button = Button(image=right, highlightthickness=0, command=remove_word)
+right_button = Button(image=right, highlightthickness=0, bd=0, command=remove_word)
 right_button.grid(row=1, column=1)
 
 next_card()
